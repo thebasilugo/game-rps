@@ -63,13 +63,16 @@ const getResult = () => {
 }
 
 const win = () => {
+  result = "you win";
   console.log("win");
 }
 
 const lose = () => {
+  result = "you lose";
   console.log("lose");
 }
 
 const draw = () => {
+  result = "it's a draw";
   console.log("draw");
 }
