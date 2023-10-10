@@ -2,10 +2,20 @@ const computerChoiceEl = document.getElementById("computer-choice");
 const userChoiceEl = document.getElementById("user-choice");
 const resultEl = document.getElementById("result");
 const possibleChoices = document.querySelectorAll("button");
+let winsEl = document.getElementById("wins");
+let drawsEl = document.getElementById("draws");
+let lossesEl = document.getElementById("losses");
 
 let userChoice;
 let computerChoice;
 let result;
+let wins = 0;
+let losses = 0;
+let draws = 0;
+
+let winText = "you win";
+let loseText = "you lose";
+let drawText = "it's a draw";
 
 possibleChoices.forEach(button => button.addEventListener("click", (event) => {
   userChoice = event.target.id;
@@ -52,24 +62,33 @@ const getResult = () => {
       lose();
     }
   }
-    if (result === "you lose") {
+    if (result === loseText) {
       resultEl.style.color = "red";
-    } else if (result === "you win") {
+    } else if (result === winText) {
       resultEl.style.color = "green";
-    } else if (result === "it's a draw") {
+    } else if (result === drawText) {
       resultEl.style.color = "black";
     } 
     resultEl.innerText = result;
 }
 
 const win = () => {
-  result = "you win";
+  result = winText;
+  wins++;
+  winsEl.innerText = "wins: " + wins;
+  winsEl.style.color = "green";
 }
 
 const lose = () => {
-  result = "you lose";
+  result = loseText;
+  losses++;
+  lossesEl.innerText = "losses: " + losses;
+  lossesEl.style.color = "red";
 }
 
 const draw = () => {
-  result = "it's a draw";
+  result = drawText;
+  draws++;
+  drawsEl.innerText = "draws: " + draws;
+  drawsEl.style.color = "darkbrown";
 }
