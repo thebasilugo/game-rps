@@ -12,6 +12,11 @@ Welcome to the Rock, Paper, Scissors Game project! This is a classic hand game w
     Enjoy a simple and fun game.
 
 ## How to Play
+The game is deployed using GitHub Pages at this link.
+So, click [Play Now!](https://thebasilugo.github.io/game-rps/), 
+or alternatively, you could copy and paste this link: https://thebasilugo.github.io/game-rps/ in your browser.
+    
+OR
 
     Clone or download the repository to your local machine.
     Open the project in your preferred web browser by launching index.html.
