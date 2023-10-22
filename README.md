@@ -50,6 +50,6 @@ This project was created as a fun exercise to build a classic Rock, Paper, Sciss
 
 ## Contact
 
-If you have any questions or need further assistance, feel free to contact the project maintainer at your-email@example.com.
+If you have any questions or need further assistance, feel free to contact the project maintainer at basilugo2@gmail.com.
 
 **Have fun playing Rock, Paper, Scissors!**
